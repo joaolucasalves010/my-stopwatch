@@ -1,0 +1,25 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "Stopwatch Electron App",
+  "main": "js/main.js",
+  "scripts": {
+    "dev": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "joaolucasalves010",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^39.2.5",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.joaolucasalves.stopwatch",
+    "productName": "Stopwatch",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+}
+
+#appTitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#stopwatchContainer {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#stopwatchContainer p {
+  font-size: 5rem;
+  color: #FFF;
+  font-family: "Orbitron", sans-serif;
+  margin: 0 0.2rem;
+}
+
+#millisElement span{
+  font-size: 2rem;
+}
+
+#stopwatchButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#play, #pause, #restart {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin: 0 0.5rem;
+  background-color: #fff;
+}
+
+#play {
+  background-image: url("../button-backgrounds/play_icon.svg");
+}
+
+#pause {
+  background-image: url("../button-backgrounds/pause_icon.svg");
+  display: none;
+}
+
+#restart {
+  background-image: url("../button-backgrounds/restart_icon.svg");
+}
+
+#play:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(100, 255, 100, 0.5);
+}
+
+#pause:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 100, 100, 0.5); 
+}
+
+#restart:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(100, 150, 255, 0.5);
+}
